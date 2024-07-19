@@ -85,7 +85,7 @@ const BlogPostList = () => {
   const paginatedPosts = newsData.slice(startIndex, startIndex + pageSize);
 
   return (
-    <div className="container-fluid my-5">
+    <div className="container-fluid py-5 main-page">
       <div className="row">
         {paginatedPosts.map((post, index) => (
           <div key={index} className="col-md-4 mb-4">
@@ -101,8 +101,8 @@ const BlogPostList = () => {
         ))}
       </div>
       <div className="d-flex justify-content-between mt-4">
-        <button onClick={handlePreviousPage} className="btn btn-secondary" disabled={page === 1}>Previous</button>
-        <button onClick={handleNextPage} className="btn btn-secondary" disabled={startIndex + pageSize >= newsData.length}>Next</button>
+        <button onClick={handlePreviousPage} className="btn btn-danger" disabled={page === 1}>Previous</button>
+        <button onClick={handleNextPage} className="btn btn-success" disabled={startIndex + pageSize >= newsData.length}>Next</button>
       </div>
     </div>
   );

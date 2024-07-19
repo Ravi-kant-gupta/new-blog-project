@@ -58,7 +58,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<BlogPostList />} />
         <Route path="/post/:id" element={<BlogPostDetails />} />
-        <Route path="/not-found" element={<NotFound />} />//https://github.com/Ravi-kant-gupta/new-blog-project.git
+        <Route path="/not-found" element={<NotFound />} />
       </Routes>
     </Router>
   );

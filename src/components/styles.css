@@ -15,3 +15,6 @@
   .image-container:hover{
     box-shadow: 1px 1px 1px 1px grey;
   }
+  .main-page{
+    background: radial-gradient(blue,purple);
+  }
